@@ -20,9 +20,10 @@ function searchCountries() {
 
 function showCountriesList(resp) {
     countriesList.innerHTML = '';
+    
     resp.forEach(function(item) {
         var liEl = document.createElement('li');
-        liEl.innerText = item.name;
+        liEl.innerText = '<div>' + item.name + ':' + '<br>' + ' - Capital city: ' + item.capital + '<br>' + ' - Currency: ' + item.currencies + 'br' + ' -population: ' + item.population + '</div>';
         countriesList.appendChild(liEl);
     });
 }
