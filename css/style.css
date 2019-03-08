@@ -86,7 +86,11 @@ body .arrow-down {
   border-top: 20px solid #fff;
 }
 
-body .country-list {
+body #countries {
+  padding: 0;
+}
+
+body #countries li {
   color: #fff;
   font-family: "Quicksand";
   font-size: 20px;
@@ -94,6 +98,8 @@ body .country-list {
   border-radius: 12px;
   padding: 10px;
   margin: 30px auto;
-  max-width: 200px;
+  max-width: 400px;
+  list-style: none;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

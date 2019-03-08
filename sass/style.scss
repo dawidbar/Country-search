@@ -67,14 +67,19 @@ body {
         margin: 0 auto;
         border-top: 20px solid #fff;
     }
-    .country-list {
-        color: #fff;
-        font-family: "Quicksand";
-        font-size: 20px;
-        border: 2px solid;
-        border-radius: 12px;
-        padding: 10px;
-        margin: 30px auto;
-        max-width: 200px;
+    #countries {
+        padding: 0;
+        li {
+            color: #fff;
+            font-family: "Quicksand";
+            font-size: 20px;
+            border: 2px solid;
+            border-radius: 12px;
+            padding: 10px;
+            margin: 30px auto;
+            max-width: 400px;
+            list-style: none;
+            text-align: center;
+        }
     }
 }
