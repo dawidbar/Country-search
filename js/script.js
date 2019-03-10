@@ -15,12 +15,14 @@ function searchCountries() {
         .then(function(resp) {
             return resp.json();
         })
-        .then(showCountriesList);
+        .then(showCountriesList)
+        .catch(function() {
+            console.log("no such country");
+        });
 }
 
 function showCountriesList(resp) {
     countriesList.innerHTML = '';
-    var liEl = document.createElement('li');
     resp.forEach(function(item) {
         var liEl = document.createElement('li');
         liEl.innerHTML = '<div>' + item.name + ':' + '<br>' + ' - Capital city: ' + item.capital + '<br>' + ' - Currency: ' + item.currencies + '<br>' + ' -population: ' + item.population + '</div>';
